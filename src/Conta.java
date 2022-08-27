@@ -1,7 +1,9 @@
-class Conta {
-    int numero;
-    String titular;
-    double saldo;
+class Conta{
+  int numero;
+  Cliente titular;
+  double saldo;
+  Endereco endereco;
+  
 
   /*void saca(double quantidade){
     double novoSaldo = this.saldo - quantidade;
@@ -21,7 +23,6 @@ class Conta {
 
   void deposita(double quantidade){
     this.saldo += quantidade;
-    System.out.println("\n");
   }
 
   /*void transfere(Conta destino, double valor){
@@ -38,7 +39,6 @@ class Conta {
       return false;
     }else{
       destino.deposita(valor);
-      System.out.printf("Saldo  .: R$%.2f", this.saldo);
       return true;
     }
   }
